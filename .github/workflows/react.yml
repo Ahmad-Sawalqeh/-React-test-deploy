@@ -1,17 +1,21 @@
-name: CI
-
-on: [push]
-
+name: Deploy React App
+on:
+  push
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        node-version: [10.x]
     steps:
-    - uses: actions/checkout@v2
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Deploy to GH Pages
       run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+        git config --global user.name "${{ github.actor }}"
+        git remote set-url origin https://${{ secrets.PERSONAL_TOKEN }}@github.com/${{ github.repository }}.git
+        npm install
+        npm run deploy
