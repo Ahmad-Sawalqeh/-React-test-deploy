@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/Ahmad-Sawalqeh/react-test-deploy/issues"
   },
-  "homepage": "https://ahmad-sawalqeh.github.io/react-test-deploy/",
+  "homepage": "/",
   "dependencies": {
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",

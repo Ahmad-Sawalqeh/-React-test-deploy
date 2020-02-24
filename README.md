@@ -7,6 +7,8 @@
 ### Links and Resources
 
 - [submission PR](https://github.com/Ahmad-Sawalqeh/react-test-deploy/pull/1)
+- [Deploy React App](https://github.com/Ahmad-Sawalqeh/react-test-deploy/runs/464866962?check_suite_focus=true)
+- [Javascript Tests]()
 
 ### Setup
 How to initialize/run your application (where applicable)
