@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import './index.css';
 import App from './app.js';
 
 class Main extends React.Component {

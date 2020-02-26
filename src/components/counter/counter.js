@@ -1,9 +1,10 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 
 class Counter extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { count: 0 };
+    this.state = { count: 0, };
   }
 
   handleUp = e => {
@@ -23,7 +24,7 @@ class Counter extends React.Component {
     } else if (count < 0) {
       polarity = 'negative';
     }
-    this.setState({ count, polarity });
+    this.setState({ count, polarity, });
   }
 
   render() {

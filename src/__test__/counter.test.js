@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import renderer from 'react-test-renderer';
@@ -20,5 +21,6 @@ describe('<Counter />', () => {
   it('renders correctly', () => {
     const tree = renderer.create(<Counter />).toJSON();
     expect(tree).toMatchSnapshot();
-  })
+  });
+
 });

@@ -1,10 +1,11 @@
 {
   "name": "react-test-deploy",
   "version": "1.0.0",
-  "private":true,
+  "private": true,
   "description": "",
   "main": "src/index.js",
   "scripts": {
+    "lint": "eslint '**/*.js'",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -26,6 +27,7 @@
   "dependencies": {
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^6.8.0",
     "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
